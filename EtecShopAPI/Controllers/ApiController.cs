@@ -38,7 +38,7 @@ public class CategoriasController(AppDbContext db) : ControllerBase
         return CreatedAtAction(nameof(Get), categoria.Id, new { categoria });
     }
 
-    [HttpPut("[id]")]
+    [HttpPut("{id}")]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
